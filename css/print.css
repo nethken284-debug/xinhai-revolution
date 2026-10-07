@@ -1,0 +1,24 @@
+/* 列印：只保留內容，展開所有隱藏步驟與人物卡背面 */
+:root, :root[data-theme="dark"] {
+  --bg: #fff; --card: #fff; --ink: #000; --ink-2: #222; --muted: #555; --line: #bbb; --line-2: #999;
+  --accent: #8f2a1d; --accent-soft: #f6ebe8; --gold-soft: #f6f0e0; --indigo-soft: #eef2f8; --shadow: none;
+}
+body { font-size: 11.5pt; line-height: 1.7; background: #fff; color: #000; }
+.topbar, .toc, .no-print, .pop, .toast, .chain-ctl, .tl-tools, .skip, footer.foot, .qbox, .u-quiz { display: none !important; }
+.wrap { max-width: none; padding: 0; }
+.unit-layout { display: block; }
+.card { box-shadow: none; break-inside: avoid; }
+.u-sec { break-inside: auto; margin-bottom: 18pt; }
+.u-sec > h2 { break-after: avoid; }
+.chain li.hidden-step .body { filter: none !important; }
+.people { grid-template-columns: 1fr 1fr; }
+.pcard, .pcard .in { min-height: 0 !important; height: auto !important; perspective: none; }
+.pcard .in { transform: none !important; }
+.pcard .f { display: none; }
+.pcard .b { position: static; transform: none; border: 1px solid #bbb; break-inside: avoid; }
+.events li { break-inside: avoid; }
+a { color: inherit; text-decoration: none; }
+.term { border: 0; }
+mark.k { background: none; font-weight: 700; }
+.flagbox svg { max-width: 160px; }
+@page { margin: 16mm 14mm; }
